@@ -56,5 +56,25 @@ const web = new Context(new WebRenderer());
 const mkd = new Context(new MarkdownRenderer());
 
 const persons = [
-    
-]
+    { Имя: 'Олег', Город: 'Стерлитамак', Родился: 2000, Работа: 'Нет'},
+    { Имя: 'Петя', Город: 'Салават', Родился: 1968, Работа: 'Рабочий'},
+    { Имя: 'Лена', Город: 'Ишимбай', Родился: 1990, Работа: 'Бизнесмен'},
+    { Имя: 'Маша', Город: 'Москва', Родился: 2001, Работа: 'Продавец'},
+    { Имя: 'Витя', Город: 'USA', Родился: 1956, Работа: 'Модель'}
+];
+
+console.group('Abstract:');
+non.process(persons);
+console.groupEnd();
+
+console.group('\nConsole:');
+con.process(persons);
+console.groupEnd();
+
+console.group('\nWeb:');
+web.process(persons);
+console.groupEnd();
+
+console.group('\nMarkdown:');
+mkd.process(persons);
+console.groupEnd();
